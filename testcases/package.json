@@ -1,0 +1,30 @@
+{
+  "name": "wemine-qa-automation",
+  "version": "1.0.0",
+  "description": "Automation Testing Suite for WeMine B2B SaaS Platform (Web Office & Mobile App)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:web": "npx playwright test --project=wemine-web-office",
+    "test:mobile": "npx playwright test --project=wemine-mobile-app",
+    "test:offline": "npx playwright test --project=wemine-mobile-offline-simulation",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report playwright-report"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "wemine",
+    "offline-first",
+    "e2e"
+  ],
+  "author": "QA Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
